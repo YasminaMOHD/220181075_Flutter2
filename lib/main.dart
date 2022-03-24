@@ -3,13 +3,11 @@ import 'package:flutter/services.dart';
 import 'package:navigation_drawer_example/widget/navigation_drawer_widget.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-    DeviceOrientation.portraitDown,
-  ]);
-  runApp(MyApp());
+  runApp(MaterialApp(
+    home: MyApp(),
+  ));
 }
+
 
 class MyApp extends StatelessWidget {
   static final String title = 'SECONED ASSEMENT';
